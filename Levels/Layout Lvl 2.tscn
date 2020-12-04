@@ -295,6 +295,7 @@ position = Vector2( 697.237, 317.991 )
 rotation = -3.13636
 scale = Vector2( 0.227292, 0.446771 )
 frames = SubResource( 10 )
+frame = 1
 playing = true
 
 [node name="Area2D" type="Area2D" parent="TileMap/TileMap/AnimatedSprite"]
@@ -309,6 +310,7 @@ position = Vector2( 935.4, 345.05 )
 rotation = -3.13636
 scale = Vector2( 0.238164, 0.358661 )
 frames = SubResource( 10 )
+frame = 1
 playing = true
 
 [node name="Area2D" type="Area2D" parent="TileMap/TileMap/AnimatedSprite2"]
@@ -323,6 +325,7 @@ position = Vector2( 767.127, 414.951 )
 rotation = -3.13636
 scale = Vector2( 0.238164, 0.339806 )
 frames = SubResource( 10 )
+frame = 1
 playing = true
 
 [node name="Area2D" parent="TileMap/TileMap/AnimatedSprite3" instance=ExtResource( 4 )]
@@ -331,6 +334,7 @@ playing = true
 position = Vector2( 571.496, 292.596 )
 scale = Vector2( 0.238164, 0.619768 )
 frames = SubResource( 10 )
+frame = 1
 playing = true
 
 [node name="Area2D" type="Area2D" parent="TileMap/TileMap/AnimatedSprite4"]
@@ -345,6 +349,7 @@ position = Vector2( 199.095, 69.0489 )
 rotation = 1.5708
 scale = Vector2( 0.238164, 0.423153 )
 frames = SubResource( 10 )
+frame = 1
 playing = true
 
 [node name="Area2D" type="Area2D" parent="TileMap/TileMap/AnimatedSprite5"]
@@ -359,7 +364,6 @@ position = Vector2( 139.605, 157.723 )
 rotation = -1.53764
 scale = Vector2( 0.238164, 0.423153 )
 frames = SubResource( 10 )
-frame = 3
 playing = true
 
 [node name="Area2D" type="Area2D" parent="TileMap/TileMap/AnimatedSprite6"]
@@ -375,7 +379,7 @@ position = Vector2( 385.006, 148.354 )
 scale = Vector2( 0.763907, 0.692788 )
 frames = SubResource( 12 )
 animation = "New Anim"
-frame = 2
+frame = 6
 playing = true
 
 [node name="Exit" type="AnimatedSprite" parent="."]
@@ -383,11 +387,11 @@ position = Vector2( 214.469, 588.713 )
 scale = Vector2( 0.763907, 0.692788 )
 frames = SubResource( 12 )
 animation = "New Anim"
-frame = 6
+frame = 3
 playing = true
 
 [node name="TileMap2" type="TileMap" parent="."]
 tile_set = SubResource( 14 )
 cell_size = Vector2( 19, 3 )
 format = 1
-tile_data = PoolIntArray( 917531, 0, 0, 1507361, 0, 0, 1507362, 0, 0, 1507363, 0, 0, 1835034, 0, 0, 1835035, 0, 0, 1900581, 0, 0, 1900582, 0, 0, 1900583, 0, 0, 2490383, 0, 0, 2687010, 0, 0, 2687011, 0, 0, 2687012, 0, 0, 3145754, 0, 0, 3211302, 0, 0, 3211303, 0, 0, 3276816, 0, 0, 3735575, 0, 0, 3735576, 0, 0, 3735591, 0, 0, 3932172, 0, 0, 3932173, 0, 0, 3932174, 0, 0, 3932196, 0, 0, 3997722, 0, 0, 4522008, 0, 0, 4522009, 0, 0, 5308459, 0, 0, 5308460, 0, 0, 5963810, 0, 0, 6488095, 0, 0, 7405612, 0, 0, 7536673, 0, 0, 7536674, 0, 0, 7798826, 0, 0, 8192024, 0, 0, 9175066, 0, 0, 9437226, 0, 0, 9437227, 0, 0, 10354712, 0, 0, 11141147, 0, 0 )
+tile_data = PoolIntArray( 917531, 0, 0, 1507361, 0, 0, 1507362, 0, 0, 1507363, 0, 0, 1835034, 0, 0, 1835035, 0, 0, 1900581, 0, 0, 1900582, 0, 0, 1900583, 0, 0, 2359317, 0, 0, 2490383, 0, 0, 2687010, 0, 0, 2687011, 0, 0, 2687012, 0, 0, 3145754, 0, 0, 3211302, 0, 0, 3211303, 0, 0, 3276816, 0, 0, 3670040, 0, 0, 3735591, 0, 0, 3932172, 0, 0, 3932173, 0, 0, 3932174, 0, 0, 3932196, 0, 0, 3997722, 0, 0, 4522008, 0, 0, 4522009, 0, 0, 5308459, 0, 0, 5308460, 0, 0, 5963810, 0, 0, 6488095, 0, 0, 7405612, 0, 0, 7536673, 0, 0, 7536674, 0, 0, 7798826, 0, 0, 8192024, 0, 0, 9175066, 0, 0, 10354712, 0, 0, 11141147, 0, 0 )
