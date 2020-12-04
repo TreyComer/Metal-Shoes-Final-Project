@@ -295,7 +295,6 @@ position = Vector2( 697.237, 317.991 )
 rotation = -3.13636
 scale = Vector2( 0.227292, 0.446771 )
 frames = SubResource( 10 )
-frame = 3
 playing = true
 
 [node name="Area2D" type="Area2D" parent="TileMap/TileMap/AnimatedSprite"]
@@ -310,7 +309,6 @@ position = Vector2( 935.4, 345.05 )
 rotation = -3.13636
 scale = Vector2( 0.238164, 0.358661 )
 frames = SubResource( 10 )
-frame = 3
 playing = true
 
 [node name="Area2D" type="Area2D" parent="TileMap/TileMap/AnimatedSprite2"]
@@ -325,7 +323,6 @@ position = Vector2( 767.127, 414.951 )
 rotation = -3.13636
 scale = Vector2( 0.238164, 0.339806 )
 frames = SubResource( 10 )
-frame = 3
 playing = true
 
 [node name="Area2D" parent="TileMap/TileMap/AnimatedSprite3" instance=ExtResource( 4 )]
@@ -334,7 +331,6 @@ playing = true
 position = Vector2( 571.496, 292.596 )
 scale = Vector2( 0.238164, 0.619768 )
 frames = SubResource( 10 )
-frame = 3
 playing = true
 
 [node name="Area2D" type="Area2D" parent="TileMap/TileMap/AnimatedSprite4"]
@@ -349,7 +345,6 @@ position = Vector2( 199.095, 69.0489 )
 rotation = 1.5708
 scale = Vector2( 0.238164, 0.423153 )
 frames = SubResource( 10 )
-frame = 3
 playing = true
 
 [node name="Area2D" type="Area2D" parent="TileMap/TileMap/AnimatedSprite5"]
@@ -364,7 +359,7 @@ position = Vector2( 139.605, 157.723 )
 rotation = -1.53764
 scale = Vector2( 0.238164, 0.423153 )
 frames = SubResource( 10 )
-frame = 2
+frame = 3
 playing = true
 
 [node name="Area2D" type="Area2D" parent="TileMap/TileMap/AnimatedSprite6"]
@@ -380,7 +375,7 @@ position = Vector2( 385.006, 148.354 )
 scale = Vector2( 0.763907, 0.692788 )
 frames = SubResource( 12 )
 animation = "New Anim"
-frame = 4
+frame = 2
 playing = true
 
 [node name="Exit" type="AnimatedSprite" parent="."]
@@ -388,7 +383,7 @@ position = Vector2( 214.469, 588.713 )
 scale = Vector2( 0.763907, 0.692788 )
 frames = SubResource( 12 )
 animation = "New Anim"
-frame = 1
+frame = 6
 playing = true
 
 [node name="TileMap2" type="TileMap" parent="."]
