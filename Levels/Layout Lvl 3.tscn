@@ -1,9 +1,17 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://Assets/6662bd2a462c14e9f994c739d528838a.png" type="Texture" id=1]
 [ext_resource path="res://Assets/d8d57d37c2a34a7222d91a56a575d9d9.png" type="Texture" id=2]
 [ext_resource path="res://Assets/Backgrounds/Level Three- Water.png" type="Texture" id=3]
 [ext_resource path="res://Assets/engine.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Jet/jet 3.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Jet/jet 5.png" type="Texture" id=6]
+[ext_resource path="res://Assets/console_s.png" type="Texture" id=7]
+[ext_resource path="res://Assets/console_w.png" type="Texture" id=8]
+[ext_resource path="res://Assets/Jet/jet 4.png" type="Texture" id=9]
+[ext_resource path="res://Assets/Jet/jet 2.png" type="Texture" id=10]
+[ext_resource path="res://Assets/Jet/jet 6.png" type="Texture" id=11]
+[ext_resource path="res://Assets/Jet/jet 7.png" type="Texture" id=12]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 0, 0, 30, 0, 30, 31, 0, 31 )
@@ -44,6 +52,14 @@ points = PoolVector2Array( 0, 0, 30, 0, 30, 31, 0, 31 )
 1/shape_one_way_margin = 0.0
 1/shapes = [  ]
 1/z_index = 0
+
+[sub_resource type="SpriteFrames" id=6]
+animations = [ {
+"frames": [ ExtResource( 9 ), ExtResource( 10 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 11 ), ExtResource( 12 ) ],
+"loop": true,
+"name": "New Anim",
+"speed": 4.0
+} ]
 
 [sub_resource type="TileSet" id=3]
 0/name = "6662bd2a462c14e9f994c739d528838a.png 0"
@@ -115,14 +131,6 @@ points = PoolVector2Array( 0, 0, 11, 0, 11, 1, 0, 1 )
 } ]
 0/z_index = 0
 
-[sub_resource type="SpriteFrames" id=6]
-animations = [ {
-"frames": [  ],
-"loop": true,
-"name": "default",
-"speed": 5.0
-} ]
-
 [node name="Node2D" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -138,12 +146,32 @@ rotation = -1.5708
 scale = Vector2( 0.436226, 1.04475 )
 texture = ExtResource( 4 )
 
+[node name="AnimatedSprite" type="AnimatedSprite" parent="TileMap/Sprite2"]
+show_behind_parent = true
+position = Vector2( 0.777832, 49.8884 )
+rotation = -3.14159
+scale = Vector2( 1.07153, 0.957163 )
+frames = SubResource( 6 )
+animation = "New Anim"
+frame = 5
+playing = true
+
 [node name="Sprite3" type="Sprite" parent="TileMap"]
 show_behind_parent = true
 position = Vector2( 787.368, 512.125 )
 rotation = -1.5708
 scale = Vector2( 0.436226, 1.04475 )
 texture = ExtResource( 4 )
+
+[node name="AnimatedSprite2" type="AnimatedSprite" parent="TileMap/Sprite3"]
+show_behind_parent = true
+position = Vector2( 2.96301, 52.8693 )
+rotation = 3.14159
+scale = Vector2( 1.07153, 0.957163 )
+frames = SubResource( 6 )
+animation = "New Anim"
+frame = 5
+playing = true
 
 [node name="Sprite4" type="Sprite" parent="TileMap"]
 show_behind_parent = true
@@ -152,12 +180,32 @@ rotation = -1.5708
 scale = Vector2( 0.436226, 1.04475 )
 texture = ExtResource( 4 )
 
+[node name="AnimatedSprite3" type="AnimatedSprite" parent="TileMap/Sprite4"]
+show_behind_parent = true
+position = Vector2( -1.26172, 52.29 )
+rotation = 3.14159
+scale = Vector2( 1.07153, 0.957163 )
+frames = SubResource( 6 )
+animation = "New Anim"
+frame = 5
+playing = true
+
 [node name="Sprite5" type="Sprite" parent="TileMap"]
 show_behind_parent = true
 position = Vector2( 847.949, 479.41 )
 rotation = -1.5708
 scale = Vector2( 0.436226, 1.04475 )
 texture = ExtResource( 4 )
+
+[node name="AnimatedSprite4" type="AnimatedSprite" parent="TileMap/Sprite5"]
+show_behind_parent = true
+position = Vector2( 1.46118, 50.465 )
+rotation = 3.14159
+scale = Vector2( 1.07153, 0.957163 )
+frames = SubResource( 6 )
+animation = "New Anim"
+frame = 5
+playing = true
 
 [node name="TileMap" type="TileMap" parent="TileMap"]
 show_behind_parent = true
@@ -171,13 +219,21 @@ tile_data = PoolIntArray( 131086, 2, 0, 131087, 2, 0, 131088, 2, 0, 131089, 2, 0
 tile_set = SubResource( 5 )
 cell_size = Vector2( 11, 1 )
 format = 1
-tile_data = PoolIntArray( 20840487, 0, 0, 21037101, 0, 0, 22020137, 0, 0, 22544428, 0, 0, 23789608, 0, 0, 23789609, 0, 0, 23789610, 0, 0, 24707108, 0, 0, 24707109, 0, 0, 24969245, 0, 0, 25493545, 0, 0, 25493546, 0, 0, 25493547, 0, 0, 26017847, 0, 0, 26279967, 0, 0, 26542125, 0, 0, 27066427, 0, 0, 27197466, 0, 0, 27394096, 0, 0, 27394097, 0, 0, 27394098, 0, 0, 27983936, 0, 0, 28049442, 0, 0, 28049443, 0, 0, 28049448, 0, 0, 28049449, 0, 0, 28246040, 0, 0, 28246041, 0, 0, 28246042, 0, 0, 29556759, 0, 0, 29818942, 0, 0, 30015517, 0, 0, 30146606, 0, 0, 30343222, 0, 0, 30343223, 0, 0, 30343224, 0, 0, 31457316, 0, 0, 31457317, 0, 0, 31457318, 0, 0, 31457330, 0, 0, 32112671, 0, 0, 32899100, 0, 0, 33095723, 0, 0, 33161270, 0, 0, 33685554, 0, 0, 34209833, 0, 0, 34406431, 0, 0, 34406432, 0, 0, 34406433, 0, 0, 34406434, 0, 0, 34930733, 0, 0, 34930734, 0, 0, 35389476, 0, 0, 35389477, 0, 0, 35389478, 0, 0, 35848233, 0, 0, 35979313, 0, 0 )
+tile_data = PoolIntArray( 14745637, 0, 0, 14745638, 0, 0, 14745639, 0, 0, 15269929, 0, 0, 15269930, 0, 0, 15269931, 0, 0, 15269932, 0, 0, 16973862, 0, 0, 16973863, 0, 0, 16973864, 0, 0, 18284586, 0, 0, 18284587, 0, 0, 18284588, 0, 0, 18284589, 0, 0, 18481188, 0, 0, 18481189, 0, 0, 19267631, 0, 0, 19267632, 0, 0, 20840487, 0, 0, 21037101, 0, 0, 22020137, 0, 0, 22544428, 0, 0, 23789608, 0, 0, 23789609, 0, 0, 23789610, 0, 0, 24707108, 0, 0, 24707109, 0, 0, 24969245, 0, 0, 25493545, 0, 0, 25493546, 0, 0, 25493547, 0, 0, 26017847, 0, 0, 26279967, 0, 0, 26542125, 0, 0, 27066427, 0, 0, 27197466, 0, 0, 27394096, 0, 0, 27394097, 0, 0, 27394098, 0, 0, 27983936, 0, 0, 28049442, 0, 0, 28049443, 0, 0, 28049448, 0, 0, 28049449, 0, 0, 28246040, 0, 0, 28246041, 0, 0, 28246042, 0, 0, 29556759, 0, 0, 29818942, 0, 0, 30015517, 0, 0, 30146606, 0, 0, 30343222, 0, 0, 30343223, 0, 0, 30343224, 0, 0, 31457316, 0, 0, 31457317, 0, 0, 31457318, 0, 0, 31457330, 0, 0, 32112671, 0, 0, 32899100, 0, 0, 33095723, 0, 0, 33161270, 0, 0, 33685554, 0, 0, 34209833, 0, 0, 34406431, 0, 0, 34406432, 0, 0, 34406433, 0, 0, 34406434, 0, 0, 34930733, 0, 0, 34930734, 0, 0, 35389476, 0, 0, 35389477, 0, 0, 35389478, 0, 0, 35848233, 0, 0, 35979313, 0, 0 )
+
+[node name="Exit 1" type="Sprite" parent="TileMap"]
+show_behind_parent = true
+position = Vector2( 169.922, 286.141 )
+texture = ExtResource( 7 )
+
+[node name="Exit 2" type="Sprite" parent="TileMap"]
+show_behind_parent = true
+position = Vector2( 296.574, 295.121 )
+scale = Vector2( 1, 1 )
+texture = ExtResource( 8 )
 
 [node name="Sprite" type="Sprite" parent="."]
 show_behind_parent = true
-position = Vector2( 526.016, 298.356 )
+position = Vector2( 526.016, 297.91 )
 scale = Vector2( 0.703491, 0.460283 )
 texture = ExtResource( 3 )
-
-[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
-frames = SubResource( 6 )
